@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Rainbow Six Clubhouse Map Guide</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="smoke">Smoke</string>
+    <string name="mute">Mute</string>
+    <string name="smoke_desc">Very versatile Operater, good for any map.</string>
+    <string name="mute_desc">Intel denial Operater.</string>
+    <string name="vigil_desc">Roaming Operater, flanks later in the round.</string>
+    <string name="vigil">Vigil</string>
+    <string name="bandit">Bandit</string>
+    <string name="bandit_desc">Essential on any site, really.</string>
+    <string name="jager">Jager</string>
+    <string name="jager_desc">Essential on any site, really.</string>
+    <string name="vlakyrie_desc">Intel Operater.</string>
+    <string name="valkyrie">Valkyrie</string>
+    <string name="doc">Doc</string>
+    <string name="doc_desc">Healer, can frag and keep teammates alive.</string>
+    <string name="kaid">Kaid</string>
+    <string name="kaid_desc">Good for electrifying hatches on Church and Armory.</string>
+    <string name="kapkan">Kapkan</string>
+    <string name="kapkan_desc">Entry denial Operator, good for stopping rushes.</string>
+    <string name="pulse">Pulse</string>
+    <string name="pulse_desc">Flex Operater, great for playing Cash and CCTV.</string>
+</resources>
