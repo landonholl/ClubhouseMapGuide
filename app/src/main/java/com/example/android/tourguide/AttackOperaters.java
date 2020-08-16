@@ -22,18 +22,8 @@ public class AttackOperaters extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AttackOperaters() {
-        // Required empty public constructor
-    }
+    public AttackOperaters() {}
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment PracticalOperators.
-     */
     // TODO: Rename and change types and number of parameters
     public static AttackOperaters newInstance(String param1, String param2) {
         AttackOperaters fragment = new AttackOperaters();
@@ -58,33 +48,25 @@ public class AttackOperaters extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup text_container ,
                              Bundle saveInstanceState){
-        // Inflate the layout for this fragment
+
         View rootView = inflater.inflate(R.layout.misc_list, text_container , false);
 
-        // Create a list of words
         final ArrayList<Operater> operaters = new ArrayList<Operater>();
-        operaters.add(new Operater("Thermite", "Hard Breacher, Good for getting into site.", R.drawable.thermite_icon));
-        operaters.add(new Operater("Thatcher", "Hands down the best Operater for attacking.", R.drawable.thatcher_icon));
-        operaters.add(new Operater("Hibana", "Hard Breacher, better for Armory and Church.", R.drawable.hibana_icon));
-        operaters.add(new Operater("Zofia", "Fragger, good for getting picks.", R.drawable.zofia_icon));
-        operaters.add(new Operater("Lion", "Intel Operater, good for seeing enemy positions.", R.drawable.lion_icon));
-        operaters.add(new Operater("Maverick", "Second best Operater for any map.", R.drawable.maverick_icon));
-        operaters.add(new Operater("Ace", "Hard Breacher, good for any situation.", R.drawable.ace_icon));
-        operaters.add(new Operater("Blackbeard", "Fragging Operater, has a shield in front of his face.", R.drawable.blackbeard_icon));
-        operaters.add(new Operater("Jackal", "Fragging Intel Operater, good for finding roamers.", R.drawable.jackal_icon));
-        operaters.add(new Operater("Finka", "Healer Fragger Operater, good for making pushes.", R.drawable.finka_icon));
+        operaters.add(new Operater(getString(R.string.thermite), getString(R.string.thermite_desc), R.drawable.thermite_icon));
+        operaters.add(new Operater(getString(R.string.thatcher), getString(R.string.thatcher_desc), R.drawable.thatcher_icon));
+        operaters.add(new Operater(getString(R.string.hibana), getString(R.string.hibana_desc), R.drawable.hibana_icon));
+        operaters.add(new Operater(getString(R.string.zofia), getString(R.string.zofia_desc), R.drawable.zofia_icon));
+        operaters.add(new Operater(getString(R.string.lion), getString(R.string.lion_desc), R.drawable.lion_icon));
+        operaters.add(new Operater(getString(R.string.maverick), getString(R.string.maverick_desc), R.drawable.maverick_icon));
+        operaters.add(new Operater(getString(R.string.ace), getString(R.string.ace_desc), R.drawable.ace_icon));
+        operaters.add(new Operater(getString(R.string.blackbeard), getString(R.string.blackbeard_desc), R.drawable.blackbeard_icon));
+        operaters.add(new Operater(getString(R.string.jackal), getString(R.string.jackal_desc), R.drawable.jackal_icon));
+        operaters.add(new Operater(getString(R.string.finka), getString(R.string.finka_desc), R.drawable.finka_icon));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
-        // adapter knows how to create list items for each item in the list.
         OperaterAdapter adapter = new OperaterAdapter(getActivity(), operaters, R.drawable.smoke_icon);
 
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // misc_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
         return rootView;

@@ -22,4 +22,24 @@
     <string name="kapkan_desc">Entry denial Operator, good for stopping rushes.</string>
     <string name="pulse">Pulse</string>
     <string name="pulse_desc">Flex Operater, great for playing Cash and CCTV.</string>
+    <string name="thermite">Thermite</string>
+    <string name="thermite_desc">Hard Breacher, Good for getting into site.</string>
+    <string name="thatcher">Thatcher</string>
+    <string name="thatcher_desc">Hands down the best Operater for attacking.</string>
+    <string name="hibana">Hibana</string>
+    <string name="hibana_desc">Hard Breacher, better for Armory and Church.</string>
+    <string name="zofia">Zofia</string>
+    <string name="zofia_desc">Fragger, good for getting picks.</string>
+    <string name="lion">Lion</string>
+    <string name="lion_desc">Intel Operater, good for seeing enemy positions.</string>
+    <string name="maverick">Maverick</string>
+    <string name="maverick_desc">Second best Operater for any map.</string>
+    <string name="ace">Ace</string>
+    <string name="ace_desc">Hard Breacher, good for any situation.</string>
+    <string name="blackbeard">Blackbeard</string>
+    <string name="blackbeard_desc">Fragging Operater, has a shield in front of his face.</string>
+    <string name="jackal">Jackal</string>
+    <string name="jackal_desc">Fragging Intel Operater, good for finding roamers.</string>
+    <string name="finka">Finka</string>
+    <string name="finka_desc">Healer Fragger Operater, good for making pushes.</string>
 </resources>

@@ -24,8 +24,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Sites", "Defense", "Attack" };
+    final int PAGE_COUNT = 4;
+    private String tabTitles[] = new String[] { "Sites", "Defense", "Attack", "Scopes" };
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -41,6 +41,8 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
                 return new DefenseOperaters();
             case 2:
                 return new AttackOperaters();
+            case 3:
+                return new BestAttachments();
             default:
                 return new PlayableSiteFragment();
         }

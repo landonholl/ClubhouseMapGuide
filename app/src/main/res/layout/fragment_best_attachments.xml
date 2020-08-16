@@ -21,38 +21,49 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
                 android:paddingTop="16dp"
-                android:text="Cash and CCTV, the easiest site to defend." />
+                android:text="ACOG, gives you a 2.5x zoom to hold longer angles, use this one when available." />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="310dp"
                 android:padding="16dp"
-                android:src="@drawable/cash_and_cctv" />
+                android:src="@drawable/acog" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:text="Church and Armory, the second best site to defend." />
+                android:text="Holo, no zoom multiplier, but it has the cleanest crosshair, the acog alternative." />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="310dp"
                 android:padding="16dp"
-                android:src="@drawable/church_and_armory" />
+                android:src="@drawable/holo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:text="Clubhouse Gym and Bedroom Site, play this site last." />
+                android:text="Reflex, just a green triangle, avoid using." />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="310dp"
                 android:padding="16dp"
-                android:src="@drawable/gym_and_bedroom" />
+                android:src="@drawable/reflex" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:text="Red Dot, just a red dot, avoid using." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:padding="16dp"
+                android:src="@drawable/red_dot" />
         </LinearLayout>
     </ScrollView>
 
