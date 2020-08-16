@@ -42,4 +42,11 @@
     <string name="jackal_desc">Fragging Intel Operater, good for finding roamers.</string>
     <string name="finka">Finka</string>
     <string name="finka_desc">Healer Fragger Operater, good for making pushes.</string>
+    <string name="cash_desc">Cash and CCTV, the easiest site to defend.</string>
+    <string name="church_desc">Church and Armory, the second best site to defend.</string>
+    <string name="gym_desc">Clubhouse Gym and Bedroom Site, play this site last.</string>
+    <string name="acog_desc">ACOG, gives you a 2.5x zoom to hold longer angles, use this one when available.</string>
+    <string name="holo_desc">Holo, no zoom multiplier, but it has the cleanest crosshair, the acog alternative.</string>
+    <string name="reflex_desc">Reflex, just a green triangle, avoid using.</string>
+    <string name="red_dot_desc">Red Dot, just a red dot, avoid using.</string>
 </resources>

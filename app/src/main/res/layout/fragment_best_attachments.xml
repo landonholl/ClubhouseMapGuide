@@ -20,8 +20,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:paddingTop="16dp"
-                android:text="ACOG, gives you a 2.5x zoom to hold longer angles, use this one when available." />
+                android:text="@string/acog_desc" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -33,7 +34,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:text="Holo, no zoom multiplier, but it has the cleanest crosshair, the acog alternative." />
+                android:layout_marginRight="16dp"
+                android:text="@string/holo_desc" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -45,7 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:text="Reflex, just a green triangle, avoid using." />
+                android:layout_marginRight="16dp"
+                android:text="@string/reflex_desc" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -57,7 +60,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
-                android:text="Red Dot, just a red dot, avoid using." />
+                android:layout_marginRight="16dp"
+                android:text="@string/red_dot_desc" />
 
             <ImageView
                 android:layout_width="match_parent"

@@ -25,10 +25,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class OperaterAdapter extends ArrayAdapter<Operater> {
+public class LargeAdapter extends ArrayAdapter<Operater> {
 
 
-    public OperaterAdapter(Context context, ArrayList<Operater> operaters, int colorResourceId) {
+    public LargeAdapter(Context context, ArrayList<Operater> operaters, int colorResourceId) {
         super(context, 0, operaters);
     }
 
@@ -38,31 +38,20 @@ public class OperaterAdapter extends ArrayAdapter<Operater> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.list_item_large, parent, false);
         }
 
         Operater currentOperater = getItem(position);
 
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
+        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view_large);
 
         descriptionTextView.setText(currentOperater.getDescription());
 
-        TextView operaterTextView = (TextView) listItemView.findViewById(R.id.operater_text_view);
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view_large);
 
-        operaterTextView.setText(currentOperater.getOperater());
+        imageView.setImageResource(currentOperater.getImage());
 
-
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view);
-
-        if (currentOperater.hasImage()) {
-
-            imageView.setImageResource(currentOperater.getImage());
-
-            imageView.setVisibility(View.VISIBLE);
-        }
-        else {
-            imageView.setVisibility(View.GONE);
-        }
+        View textContainer = listItemView.findViewById(R.id.text_container);
 
         return listItemView;
 

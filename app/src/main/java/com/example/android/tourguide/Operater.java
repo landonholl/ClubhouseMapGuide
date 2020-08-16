@@ -10,9 +10,9 @@ public class Operater {
 
     private String mDescription;
 
-    public Operater(String operater, String description) {
-        mOperater = operater;
+    public Operater(String description, int imageID) {
         mDescription = description;
+        mImageId = imageID;
     }
 
     public Operater(String operater, String description, int imageId) {

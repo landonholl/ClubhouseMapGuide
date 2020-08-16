@@ -7,13 +7,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BestAttachments#newInstance} factory method to
+ * Use the {@link ScopesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BestAttachments extends Fragment {
+public class ScopesFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +27,7 @@ public class BestAttachments extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BestAttachments() {
+    public ScopesFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +40,8 @@ public class BestAttachments extends Fragment {
      * @return A new instance of fragment BestAttachments.
      */
     // TODO: Rename and change types and number of parameters
-    public static BestAttachments newInstance(String param1, String param2) {
-        BestAttachments fragment = new BestAttachments();
+    public static ScopesFragment newInstance(String param1, String param2) {
+        ScopesFragment fragment = new ScopesFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -56,9 +59,24 @@ public class BestAttachments extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_best_attachments, container, false);
+    public View onCreateView(LayoutInflater inflater,ViewGroup text_container ,
+                             Bundle saveInstanceState){
+
+        View rootView = inflater.inflate(R.layout.misc_list, text_container , false);
+
+        final ArrayList<Operater> operaters = new ArrayList<Operater>();
+        operaters.add(new Operater(getString(R.string.acog_desc), R.drawable.acog));
+        operaters.add(new Operater(getString(R.string.holo_desc), R.drawable.holo));
+        operaters.add(new Operater(getString(R.string.red_dot_desc), R.drawable.red_dot));
+        operaters.add(new Operater(getString(R.string.reflex_desc), R.drawable.reflex));
+
+        LargeAdapter adapter = new LargeAdapter(getActivity(), operaters, R.drawable.smoke_icon);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
+
+        return rootView;
+
     }
 }
